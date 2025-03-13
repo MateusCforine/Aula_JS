@@ -1,7 +1,7 @@
 class ContaBancaria{
     #saldo
-    constructor(valorIncial){
-        this.valorIncial = _valorinicial;
+    constructor(_saldo){
+        this.#saldo = _saldo;
     }
         depositar(valor){
             this.#saldo += valor;
@@ -18,8 +18,9 @@ class ContaBancaria{
     get saldo(){
         return this.#saldo;
     }
-    imprimir(){
-        console.log()
+    saldo(){
+        console.log(`Saldo Atual: ${this.#saldo}`);
     }
 
 }
+module.exports = ContaBancaria;
