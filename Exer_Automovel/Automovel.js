@@ -12,7 +12,7 @@ class Automovel{
         return this.#codigo
     }
     imprimir(){
-        console.log(`Código: ${this.codigo}, Marca: ${this.marca}, Modelo: ${this.modelo}`);
+        console.log(`Código: ${this.#codigo}, Marca: ${this.marca}, Modelo: ${this.#modelo}`);
     }
 
 }

@@ -33,7 +33,7 @@ class Pessoa{
         return `Código: ${this.#codigo}, Nome: ${this.#nome}`;
     }
     imprimirCompleto() {
-        return `Código: ${this.#codigo}, Nome: ${this.#nome}\nAutomóveis: ${this.automoveis.length ? this.automoveis.map(a => `\n  ${a.imprimir()}`).join('') : "\n  Nenhum automóvel registrado."}`;
+        return `Código: ${this.#codigo}, Nome: ${this.#nome}\nAutomóveis: ${this.#automovel.length ? this.#automovel.map(a => `\n  ${a.imprimir()}`).join('') : "\n  Nenhum automóvel registrado."}`;
     }
     
 }
